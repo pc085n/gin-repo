@@ -10,7 +10,7 @@ uses: docker/login-action@v1
 with:
 registry: ghcr.io
 username: ${{ github.actor }}
-password: ${{ secrets.GITHUB_TOKEN }}
+accessToken: ${{ secrets.GITHUB_TOKEN }}
 - name: Build the gin-qa-solutions Docker image
 run: |
        docker build . --tag ghcr.io/pc085n/gin-qa-solutions:latest
