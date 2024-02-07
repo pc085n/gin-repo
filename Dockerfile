@@ -11,3 +11,5 @@ RUN pip install robotframework-jsonlibrary
 # Install Robot/Request
 RUN pip install robotframework-requests
 #
+# 
+CMD node app.js
